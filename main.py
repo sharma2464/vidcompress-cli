@@ -92,18 +92,28 @@ def ffmpeg_remux(input_path: Path, output_path: Path):
     return run(cmd)
 
 
-def ffmpeg_encode(input_path: Path, output_path: Path, quality: int, platform_name):
+def ffmpeg_encode(input_path: Path, output_path: Path, quality: int, platform_name: str):
     cmd = ["ffmpeg", "-y", "-i", str(input_path)]
 
-    # Hardware acceleration (best effort)
     if platform_name == "macos":
-        cmd += ["-c:v", "hevc_videotoolbox", "-tag:v", "hvc1"]
-        cmd += ["-b:v", f"{max(800, 6000 - quality * 150)}k"]
+        # Apple VideoToolbox (CQ mode)
+        cmd += [
+            "-c:v", "hevc_videotoolbox",
+            "-tag:v", "hvc1",
+            "-q:v", str(quality),
+            "-g", "48"
+        ]
     else:
-        cmd += ["-c:v", "libx265", "-crf", str(quality)]
+        # Software fallback (CRF)
+        cmd += [
+            "-c:v", "libx265",
+            "-crf", str(quality),
+            "-preset", "medium"
+        ]
 
     cmd += [
-        "-c:a", "aac", "-b:a", "128k",
+        "-c:a", "aac",
+        "-b:a", "128k",
         "-movflags", "+faststart",
         str(output_path)
     ]
