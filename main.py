@@ -42,26 +42,31 @@ def run(cmd):
 
 # ================= PLATFORM =================
 def detect_platform():
-    sysname = platform.system().lower()
-
-    if "android" in platform.platform().lower():
+    p = platform.platform().lower()
+    if "android" in p:
         return "android"
-    if sysname == "darwin":
+    if sys.platform == "darwin":
         return "macos"
-    if sysname == "windows":
+    if sys.platform.startswith("win"):
         return "windows"
     return "linux"
 
 
-def select_engine():
-    plat = detect_platform()
+def select_engine(requested):
+    if requested:
+        if requested == "handbrake" and which("HandBrakeCLI"):
+            return "handbrake"
+        if requested == "ffmpeg" and which("ffmpeg"):
+            return "ffmpeg"
+        log(f"❌ Requested engine not available: {requested}")
+        sys.exit(1)
 
-    if plat == "macos" and which("HandBrakeCLI"):
+    if detect_platform() == "macos" and which("HandBrakeCLI"):
         return "handbrake"
     if which("ffmpeg"):
         return "ffmpeg"
 
-    log("❌ No supported encoder found (HandBrakeCLI or ffmpeg)")
+    log("❌ No encoder available (ffmpeg or HandBrakeCLI)")
     sys.exit(1)
 
 
@@ -129,6 +134,7 @@ def process_one(
     quality: int,
     platform_name: str,
     single_file: bool,
+    remux: bool,
 ):
     if already_processed(input_path, output_root):
         log(f"⏭ Skipping: {input_path}")
@@ -147,22 +153,25 @@ def process_one(
 
     log(f"🎞 Processing: {name}")
 
-    # 1️⃣ Try remux
-    if engine == "ffmpeg" and remux_possible(input_path):
-        log("🔁 Trying remux (no re-encode)")
+    # REMUX (ONLY if explicitly requested)
+    if remux:
+        log("🔁 Remux mode enabled")
+        if engine != "ffmpeg":
+            log("❌ Remux requires ffmpeg")
+            return
         if ffmpeg_remux(input_path, output_path).returncode == 0:
             log(f"✅ Remuxed → {output_path}")
-            return
         else:
-            log("🔄 Remux failed, encoding instead")
+            log("❌ Remux failed")
+        return
 
-    # 2️⃣ Encode
+    # ENCODE
     if engine == "handbrake":
         res = handbrake_encode(input_path, output_path, quality)
     else:
         res = ffmpeg_encode(input_path, output_path, quality, platform_name)
 
-    if res.returncode != 0 or output_path.stat().st_size == 0:
+    if res.returncode != 0 or not output_path.exists() or output_path.stat().st_size == 0:
         log(f"❌ Failed: {input_path}")
         if output_path.exists():
             output_path.unlink()
@@ -172,16 +181,16 @@ def process_one(
 
 # ================= MAIN ====================
 def main():
-    if len(sys.argv) < 3:
-        print(
-            f"Usage:\n"
-            f"  {sys.argv[0]} <input_path> <output_path> [quality]\n"
-        )
-        sys.exit(1)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("input")
+    parser.add_argument("output")
+    parser.add_argument("--quality", type=int, default=DEFAULT_QUALITY)
+    parser.add_argument("--engine", choices=["ffmpeg", "handbrake"])
+    parser.add_argument("--remux", action="store_true")
+    args = parser.parse_args()
 
-    input_root = Path(sys.argv[1]).expanduser().resolve()
-    output_root = Path(sys.argv[2]).expanduser().resolve()
-    quality = int(sys.argv[3]) if len(sys.argv) > 3 else DEFAULT_QUALITY
+    input_root = Path(args.input).expanduser().resolve()
+    output_root = Path(args.output).expanduser().resolve()
 
     if not input_root.exists():
         log("❌ Input path does not exist")
@@ -190,10 +199,11 @@ def main():
     output_root.mkdir(parents=True, exist_ok=True)
 
     platform_name = detect_platform()
-    engine = select_engine()
+    engine = select_engine(args.engine)
 
     log(f"🖥 Platform: {platform_name}")
     log(f"⚙ Engine: {engine}")
+    log(f"🎯 Mode: {'REMUX' if args.remux else 'ENCODE'}")
 
     jobs = []
     single_file = input_root.is_file()
@@ -219,9 +229,10 @@ def main():
                 input_root,
                 output_root,
                 engine,
-                quality,
+                args.quality,
                 platform_name,
                 single_file,
+                args.remux,
             )
 
     log("🎉 All conversions complete.")
