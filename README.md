@@ -1,61 +1,275 @@
-## 🎞️ Vibe-Compressed: Metadata-Preserving Video Optimizer
-A Python-based automation tool that wraps HandBrakeCLI to batch-compress video libraries while strictly preserving the "soul" of your files. Unlike most converters, this tool ensures your original timestamps (Last Modified), all audio tracks, subtitles, and markers remain intact.
+Here’s a clean, clear, copy-paste ready README.md for your project.
+It’s written to be understandable by macOS, Linux, Windows, and Android (Termux) users, with zero ambiguity about behavior.
 
-## ✨ Why this exists?
-Standard video conversion GUIs often strip away metadata or reset file creation dates to the current time. This breaks library organization in apps like Plex, Photos, or Finder. This script was "vibe coded" to solve that—optimizing file size without losing the history of the media.
 
-## 🚀 Features
-Timestamp Sync: Uses touch -r to map the original file's modification date to the compressed output.
+---
 
-Hardware Accelerated: Defaulted to H.265 Apple VideoToolbox for blazing-fast encodes on M-series chips.
+🎞️ VidCompress CLI
 
-Batch Processing: Recursively walks through folders to find and compress videos.
+A cross-platform video compression CLI written in Python that intelligently uses HandBrakeCLI or ffmpeg, with explicit control over remuxing vs encoding.
 
-Concurrency: Multi-threaded execution (configured for M2 Pro) to handle multiple jobs at once.
+No silent failures. No auto-magic. You choose exactly what happens.
 
-Metadata Heavy: Retains all audio streams, subtitle tracks, and chapter markers.
 
-Smart Skipping: Automatically detects and skips already compressed files to prevent loops.
+---
 
-## 🛠️ Prerequisites
-Ensure you have the following installed:
+✨ Features
 
-Python 3.x
+✅ Works on macOS, Linux, Windows, Android (Termux)
 
-HandBrakeCLI:
+🎛 Supports HandBrakeCLI and ffmpeg
 
-Bash
-brew install handbrake
-## 📥 Installation
-Clone this repository or download the script.
+🔁 Remux is opt-in only (--remux)
 
-Make the script executable:
+🎥 Directory or single-file input
 
-Bash
-chmod +x compress.py
-## 📖 Usage
-The script takes an input path (file or folder), an output destination, and an optional quality setting.
+🚫 Prevents recursive compression
 
-Bash
-python3 compress.py <input_path> <output_path> [quality]
-Examples:
+⚡ Uses hardware acceleration when available
 
-Single File:
+📦 Zero external Python dependencies
 
-Bash
-python3 compress.py vacation.mov ./backups
-Entire Directory:
+🧵 Safe parallel processing
 
-Bash
-python3 compress.py ~/Movies/2023 ~/Movies/Compressed 18
-## ⚙️ Configuration
-You can tweak the constants at the top of the script to match your hardware:
+📜 Clear logs for every file
 
-MAX_GPU_JOBS: Set this based on your GPU cores (Default is 2 for M2 Pro).
 
-DEFAULT_QUALITY: Higher is lower quality (18-22 is the sweet spot for H.265).
 
-VIDEO_EXTS: Add or remove supported file formats.
+---
 
-## 📝 License
-MIT License - Feel free to use and modify for your own library vibes.
+📦 Requirements
+
+Mandatory (at least one):
+
+ffmpeg OR
+
+HandBrakeCLI
+
+
+Optional:
+
+Both installed → automatic best selection
+
+
+
+---
+
+🔧 Installation
+
+macOS
+
+```brew install ffmpeg handbrake```
+
+Ubuntu / Debian
+
+```sudo apt install ffmpeg handbrake-cli```
+
+Arch Linux
+
+```sudo pacman -S ffmpeg handbrake```
+
+Windows
+
+Install ffmpeg: https://ffmpeg.org/download.html
+
+Install HandBrakeCLI: https://handbrake.fr/downloads2.php
+Ensure both are in PATH.
+
+
+Android (Termux)
+
+```pkg install ffmpeg python```
+
+> ⚠️ HandBrakeCLI is not supported on Android
+
+
+
+
+---
+
+🚀 Usage
+
+```python main.py <input_path> <output_path> [options]```
+
+Examples
+
+Compress a directory
+
+```python main.py ./videos ./compressed```
+
+Compress a single file
+
+```python main.py video.mov ./out```
+
+Set quality (lower = better quality)
+
+```python main.py ./videos ./out --quality 22```
+
+Force ffmpeg
+
+```python main.py ./videos ./out --engine ffmpeg```
+
+Force HandBrake
+
+```python main.py ./videos ./out --engine handbrake```
+
+Explicit remux (no re-encode)
+
+```python main.py ./videos ./out --remux```
+
+
+---
+
+🎛 Options
+
+Option	Description
+
+`--quality <int>`	Encoding quality (default: 28)
+`--engine ffmpeg|handbrake`	Force encoder
+`--remux`	Copy streams without re-encoding
+
+
+
+---
+
+🔁 Remux vs Encode
+
+🔁 Remux (--remux)
+
+No quality loss
+
+Extremely fast
+
+Only changes container (e.g. .MOV → .mp4)
+
+Requires ffmpeg
+
+
+🎞 Encode (default)
+
+Compresses video
+
+Smaller file size
+
+Uses hardware acceleration when possible
+
+
+> ❗ Remux is never automatic — you must explicitly enable it.
+
+
+
+
+---
+
+⚡ Hardware Acceleration
+
+Platform	Method
+
+macOS	VideoToolbox (HEVC)
+Linux	CPU (x265)
+Windows	CPU (x265)
+Android	CPU (Termux ffmpeg)
+
+
+
+---
+
+🚫 What This Tool Will NOT Do
+
+❌ Auto-remux behind your back
+
+❌ Produce zero-byte files silently
+
+❌ Re-compress already compressed output
+
+❌ Install system packages automatically
+
+
+
+---
+
+🧪 Tested Platforms
+
+✅ macOS (Apple Silicon)
+
+✅ Linux (Ubuntu, Arch)
+
+✅ Windows 10 / 11
+
+✅ Android (Termux)
+
+
+
+---
+
+📂 Output Structure
+
+Input directory structure is preserved:
+```
+input/
+  A/video1.mov
+  B/video2.mp4
+
+output/
+  A/video1_compressed.mp4
+  B/video2_compressed.mp4
+```
+
+---
+
+🛠 Troubleshooting
+
+Nothing happens?
+
+Ensure ffmpeg or HandBrakeCLI is installed
+
+Run without --remux to force encoding
+
+Check logs — every file prints its action
+
+
+Zero-byte output?
+
+Caused by remuxing incompatible streams
+
+Re-run without --remux
+
+
+
+---
+
+📜 License
+
+MIT — do whatever you want, just don’t blame the author 🙂
+
+
+---
+
+⭐ Future Ideas (Optional)
+
+JSON stats per file
+
+SSIM-based quality tuning
+
+GUI wrapper
+
+Preset export/import
+
+Batch comparison vs HandBrake GUI
+
+
+
+---
+
+If you want, I can also generate:
+
+--help output screenshot
+
+Example JSON stats schema
+
+A pyproject.toml
+
+A GitHub Actions CI pipeline
+
+
+Just say the word 🚀
