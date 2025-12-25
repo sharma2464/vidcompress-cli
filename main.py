@@ -26,7 +26,11 @@ def main():
 
     engine = ensure_dependencies(engine)
 
-    if engine == "handbrake":
+    if engine == "remux":
+        from engines import remux as engine_module
+    elif engine == "videotoolbox":
+        from engines import videotoolbox as engine_module
+    elif engine == "handbrake":
         from engines import handbrake as engine_module
     else:
         from engines import ffmpeg as engine_module
