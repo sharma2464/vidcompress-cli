@@ -30,3 +30,20 @@ def detect_platform() -> str:
         return "windows"
 
     return "unknown"
+
+
+
+from pathlib import Path
+
+VIDEO_EXTS = {
+    ".mp4",
+    ".mov",
+    ".mkv",
+    ".m4v",
+    ".avi",
+    ".webm",
+    ".3gp"
+}
+
+def is_video_file(path: Path) -> bool:
+    return path.suffix.lower() in VIDEO_EXTS
