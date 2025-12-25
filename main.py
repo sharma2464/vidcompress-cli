@@ -1,46 +1,49 @@
-#!/usr/bin/env python3
-
-import sys
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor
+import sys
+import os
 
-from config import MAX_JOBS, DEFAULT_QUALITY
-from deps import ensure_dependencies
-from scanner import scan_inputs
-from worker import run_job
+from engine_dispatch import process_video
+from utils import is_video_file
+
+MAX_JOBS = 2
 
 def main():
     if len(sys.argv) < 3:
-        print("Usage: main.py <input> <output> [quality] [--engine auto|handbrake|ffmpeg]")
+        print("Usage: main.py <input> <output> [--engine remux|ffmpeg]")
         sys.exit(1)
-
-    engine = "auto"
-    if "--engine" in sys.argv:
-        idx = sys.argv.index("--engine")
-        engine = sys.argv[idx + 1]
-        del sys.argv[idx:idx + 2]
 
     input_root = Path(sys.argv[1]).expanduser().resolve()
     output_root = Path(sys.argv[2]).expanduser().resolve()
-    quality = int(sys.argv[3]) if len(sys.argv) > 3 else DEFAULT_QUALITY
 
-    engine = ensure_dependencies(engine)
+    engine = "ffmpeg"
+    if "--engine" in sys.argv:
+        engine = sys.argv[sys.argv.index("--engine") + 1]
 
-    if engine == "remux":
-        from engines import remux as engine_module
-    elif engine == "videotoolbox":
-        from engines import videotoolbox as engine_module
-    elif engine == "handbrake":
-        from engines import handbrake as engine_module
+    output_root.mkdir(parents=True, exist_ok=True)
+
+    jobs = []
+
+    if input_root.is_file():
+        jobs.append(input_root)
     else:
-        from engines import ffmpeg as engine_module
+        for root, _, files in os.walk(input_root):
+            for f in files:
+                p = Path(root) / f
+                if is_video_file(p):
+                    jobs.append(p)
 
-    jobs, single = scan_inputs(input_root, output_root)
     print(f"Found {len(jobs)} video(s) → using {engine}")
 
-    with ThreadPoolExecutor(MAX_JOBS) as pool:
+    with ThreadPoolExecutor(max_workers=MAX_JOBS) as ex:
         for job in jobs:
-            pool.submit(run_job, engine_module, job, input_root, output_root, quality, single)
+            ex.submit(
+                process_video,
+                job,
+                input_root,
+                output_root,
+                engine
+            )
 
     print("🎉 All conversions complete.")
 
