@@ -9,8 +9,8 @@ import threading
 
 # ------------- CONFIG ----------------
 MAX_GPU_JOBS = 2                  # Safe for M2 Pro
-DEFAULT_QUALITY = 18
-VIDEO_EXTS = {".mp4", ".mov", ".mkv", ".m4v"}
+DEFAULT_QUALITY = 30
+VIDEO_EXTS = {".avi", ".mp4", ".mov", ".mkv", ".m4v"}
 # ------------------------------------
 
 lock = threading.Lock()
