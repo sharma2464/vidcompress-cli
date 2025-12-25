@@ -7,6 +7,7 @@ def ensure_dependencies(engine: str) -> str:
 
     # -------- Android / Termux --------
     if os_type == "android":
+        print("📱 Android detected (Termux)")
         if which("ffmpeg"):
             return "ffmpeg"
 
