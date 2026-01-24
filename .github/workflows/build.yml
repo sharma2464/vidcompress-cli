@@ -1,0 +1,257 @@
+name: Build VidCompress UI
+
+on:
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main ]
+  release:
+    types: [ published ]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        include:
+          - os: ubuntu-latest
+            artifact_name: vidcompress-linux-x64
+            binary_name: vidcompress
+          - os: windows-latest
+            artifact_name: vidcompress-windows-x64
+            binary_name: vidcompress.exe
+          - os: macos-latest
+            artifact_name: vidcompress-macos-universal
+            binary_name: vidcompress
+    
+    runs-on: ${{ matrix.os }}
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install system dependencies
+      shell: bash
+      run: |
+        case "${{ matrix.os }}" in
+          ubuntu-latest)
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg libavcodec-dev libavformat-dev libavutil-dev libswscale-dev libavdevice-dev libavfilter-dev
+            echo "FFMPEG_PATH=/usr/bin" >> $GITHUB_ENV
+            ;;
+          macos-latest)
+            brew install ffmpeg handbrake
+            echo "FFMPEG_PATH=/opt/homebrew/bin" >> $GITHUB_ENV
+            ;;
+          windows-latest)
+            choco install ffmpeg handbrake-cli
+            echo "FFMPEG_PATH=C:\\ProgramData\\chocolatey\\bin" >> $GITHUB_ENV
+            ;;
+        esac
+        
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install PySide6 pyside6-addons Pillow
+        
+    - name: Create application icon
+      run: |
+        python << 'EOF'
+        try:
+            from PIL import Image, ImageDraw
+            import os
+            
+            # Create a simple icon
+            img_size = 256
+            img = Image.new('RGBA', (img_size, img_size), (52, 152, 219, 255))
+            draw = ImageDraw.Draw(img)
+            
+            # Draw video film icon
+            margin = 40
+            film_width = img_size - 2 * margin
+            film_height = film_width * 0.6
+            x = margin
+            y = (img_size - film_height) // 2
+            
+            # Film strip
+            draw.rectangle([x, y, x + film_width, y + film_height], fill=(255, 255, 255, 255))
+            draw.rectangle([x + 10, y + 10, x + film_width - 10, y + film_height - 10], fill=(52, 152, 219, 255))
+            
+            # Film holes
+            hole_size = 15
+            hole_spacing = 30
+            for i in range(4):
+                hole_x = x + 20 + i * hole_spacing
+                hole_y = y + film_height // 2 - hole_size // 2
+                draw.ellipse([hole_x, hole_y, hole_x + hole_size, hole_y + hole_size], fill=(52, 152, 219, 255))
+            
+            img.save('icon.png')
+            print("✅ Icon created successfully")
+        except Exception as e:
+            print(f"❌ Icon creation failed: {e}")
+        EOF
+        
+    - name: Build application
+      run: |
+        python << 'EOF'
+        import PySide6
+        from PySide6.QtCore import QStandardPaths
+        from PySide6.QtGui import QIcon
+        import shutil
+        import platform
+        import sys
+        import os
+        
+        try:
+            # Create application directory
+            app_dir = "VidCompress"
+            os.makedirs(app_dir, exist_ok=True)
+            
+            # Copy main script
+            shutil.copy("vidcompress_ui.py", f"{app_dir}/vidcompress_ui.py")
+            
+            # Copy dependencies
+            shutil.copy("main.py", f"{app_dir}/main.py")
+            shutil.copy("convert.py", f"{app_dir}/convert.py")
+            shutil.copy("AGENTS.md", f"{app_dir}/AGENTS.md")
+            shutil.copy("README.md", f"{app_dir}/README.md")
+            
+            # Create entry point script
+            if platform.system() == "Windows":
+                with open(f"{app_dir}/vidcompress.bat", "w") as f:
+                    f.write("@echo off\\npython vidcompress_ui.py %*\\n")
+                with open(f"{app_dir}/run.py", "w") as f:
+                    f.write("#!/usr/bin/env python3\\nimport sys\\nos.chdir(os.path.dirname(os.path.abspath(__file__)))\\nexec(open('vidcompress_ui.py').read())\\n")
+            else:
+                with open(f"{app_dir}/run.py", "w") as f:
+                    f.write("#!/usr/bin/env python3\\nimport sys, os\\nos.chdir(os.path.dirname(os.path.abspath(__file__)))\\nexec(open('vidcompress_ui.py').read())\\n")
+                os.chmod(f"{app_dir}/run.py", 0o755)
+            
+            print(f"✅ Application built for {platform.system()}")
+            
+        except Exception as e:
+            print(f"❌ Build failed: {e}")
+            sys.exit(1)
+        EOF
+        
+    - name: Create distributable package
+      shell: bash
+      run: |
+        case "${{ matrix.os }}" in
+          ubuntu-latest)
+            tar -czf ${{ matrix.artifact_name }}.tar.gz -C VidCompress .
+            echo "✅ Linux package created: ${{ matrix.artifact_name }}.tar.gz"
+            ;;
+          macos-latest)
+            # Create macOS app bundle
+            mkdir -p VidCompress.app/Contents/MacOS
+            mkdir -p VidCompress.app/Contents/Resources
+            cp VidCompress/* VidCompress.app/Contents/MacOS/
+            cp icon.png VidCompress.app/Contents/Resources/AppIcon.icns
+            
+            # Create Info.plist
+            cat > VidCompress.app/Contents/Info.plist << 'EOF'
+            <?xml version="1.0" encoding="UTF-8"?>
+            <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+            <plist version="1.0">
+            <dict>
+                <key>CFBundleExecutable</key><string>run.py</string>
+                <key>CFBundleIdentifier</key><string>com.vidcompress.ui</string>
+                <key>CFBundleName</key><string>VidCompress</string>
+                <key>CFBundleVersion</key><string>2.0.0</string>
+                <key>CFBundleShortVersionString</key><string>2.0</string>
+                <key>CFBundleIconFile</key><string>AppIcon</string>
+                <key>NSHighResolutionCapable</key><true/>
+                <key>LSUIElement</key><false/>
+            </dict>
+            </plist>
+            EOF
+            
+            # Create DMG
+            hdiutil create -volname "VidCompress" -srcfolder VidCompress.app -ov -format UDZO VidCompress.dmg
+            mv VidCompress.dmg ${{ matrix.artifact_name }}.dmg
+            echo "✅ macOS package created: ${{ matrix.artifact_name }}.dmg"
+            ;;
+          windows-latest)
+            # Create installer directory
+            mkdir -p VidCompress-Installer
+            cp -r VidCompress VidCompress-Installer/
+            
+            # Create NSIS installer script
+            cat > installer.nsi << 'EOF'
+            !define APPNAME "VidCompress"
+            !define VERSION "2.0.0"
+            !define PUBLISHER "VidCompress Team"
+            
+            Name "${APPNAME}"
+            OutFile "VidCompress-Installer.exe"
+            InstallDir "$PROGRAMFILES\\${APPNAME}"
+            
+            Page directory
+            Page instfiles
+            
+            Section "MainSection" SEC01
+                SetOutPath "$INSTDIR"
+                File /r "VidCompress\\*"
+                CreateDirectory "$SMPROGRAMS\\${APPNAME}"
+                CreateShortCut "$SMPROGRAMS\\${APPNAME}\\${APPNAME}.lnk" "$INSTDIR\\vidcompress.exe"
+                CreateShortCut "$DESKTOP\\${APPNAME}.lnk" "$INSTDIR\\vidcompress.exe"
+            SectionEnd
+            EOF
+            
+            # Build installer (requires makensis)
+            if command -v makensis &> /dev/null; then
+                makensis installer.nsi
+                mv VidCompress-Installer.exe ${{ matrix.artifact_name }}.exe
+                echo "✅ Windows installer created: ${{ matrix.artifact_name }}.exe"
+            else
+                # Fallback to zip
+                cd VidCompress-Installer
+                7z a -tzip ../${{ matrix.artifact_name }}.zip *
+                cd ..
+                echo "✅ Windows zip created: ${{ matrix.artifact_name }}.zip"
+            fi
+            ;;
+        esac
+        
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: ${{ matrix.artifact_name }}
+        path: |
+          ${{ matrix.artifact_name }}.*
+        retention-days: 30
+        
+  create-release:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'release'
+    steps:
+    - name: Download all artifacts
+      uses: actions/download-artifact@v3
+      
+    - name: Create release assets
+      run: |
+        mkdir -p release-assets
+        
+        # Copy all platform artifacts
+        cp vidcompress-linux-x64/vidcompress-linux-x64.tar.gz release-assets/
+        cp vidcompress-macos-universal/vidcompress-macos-universal.dmg release-assets/
+        cp vidcompress-windows-x64/vidcompress-windows-x64.exe release-assets/ 2>/dev/null || \
+        cp vidcompress-windows-x64/vidcompress-windows-x64.zip release-assets/
+        
+        # Create checksums
+        cd release-assets
+        sha256sum * > SHA256SUMS
+        
+    - name: Upload release assets
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          release-assets/*
+        generate_release_notes: true

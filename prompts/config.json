@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "project": "vidcompress-cli",
+  "created": "2025-01-24T10:30:00Z",
+  "config": {
+    "default_author": "opencode",
+    "capture_diffs": true,
+    "capture_context": true,
+    "validate_files": true,
+    "file_organization": "by_component",
+    "date_format": "YYYY-MM-DD",
+    "session_id_format": "session_{timestamp}_{random}"
+  },
+  "folders": {
+    "main": {
+      "description": "Prompts related to main.py",
+      "files": ["main.py"]
+    },
+    "convert": {
+      "description": "Prompts related to convert.py", 
+      "files": ["convert.py"]
+    },
+    "project": {
+      "description": "Project-level prompts (README, AGENTS.md, etc.)",
+      "files": ["README.md", "AGENTS.md", ".gitignore", "pyproject.toml"]
+    }
+  },
+  "validation": {
+    "required_fields": ["timestamp", "session_id", "user_prompt", "files_modified"],
+    "max_file_size_mb": 10,
+    "allowed_extensions": [".json"]
+  },
+  "diff_format": {
+    "type": "unified",
+    "context_lines": 3,
+    "include_binary": false
+  }
+}

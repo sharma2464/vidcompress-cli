@@ -198,7 +198,39 @@ def main():
     parser.add_argument("--quality", type=int, default=DEFAULT_QUALITY)
     parser.add_argument("--engine", choices=["ffmpeg", "handbrake"])
     parser.add_argument("--remux", action="store_true")
+    # Debug option to print environment and tooling status
+    parser.add_argument('--debug', action='store_true', help='Print debug information and exit')
     args = parser.parse_args()
+    if getattr(args, 'debug', False):
+        # Print a concise diagnostic report and exit
+        def _print_debug():
+            import platform as _plat
+            import sys as _sys
+            import subprocess as _sp
+            print("--- VidCompress Debug Info ---")
+            print(f"OS: {_plat.system()} {_plat.machine()}")
+            print(f"Python: {_sys.version.split()[0]}")
+            # ffmpeg
+            try:
+                _out = _sp.run(["ffmpeg", "-version"], capture_output=True, text=True, check=False).stdout
+                print("FFmpeg:", _out.splitlines()[0] if _out else 'not found')
+            except Exception:
+                print("FFmpeg: not found")
+            # HandBrakeCLI
+            try:
+                _out = _sp.run(["HandBrakeCLI", "-V"], capture_output=True, text=True, check=False).stdout
+                print("HandBrakeCLI:", _out.splitlines()[0] if _out else 'not found')
+            except Exception:
+                print("HandBrakeCLI: not found")
+            # PySide6
+            try:
+                import PySide6  # noqa: F401
+                print("PySide6: available")
+            except Exception:
+                print("PySide6: not available")
+            print("--- end debug info ---")
+        _print_debug()
+        sys.exit(0)
 
     input_root = Path(args.input).expanduser().resolve()
     output_root = Path(args.output).expanduser().resolve()
