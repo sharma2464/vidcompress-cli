@@ -1,0 +1,662 @@
+[2026-02-27 14:45:26] Scanning for videos in DCIM/Camera...
+[2026-02-27 14:45:27] Found 39 video(s) to process.
+[2026-02-27 14:45:27] --- Starting: 20240802_120949.mp4 ---
+[2026-02-27 14:45:27] Pulling 20240802_120949.mp4 to local...
+[2026-02-27 14:56:17] 🚀 Starting bulk pull from device...
+[2026-02-27 14:56:17] 📱 Found 39 video(s) on device.
+[2026-02-27 14:56:17] 📥 Pulling: 20221118_161752.mp4...
+[2026-02-27 14:56:18] ✅ Pull success: 20221118_161752.mp4 (3.23 MB)
+[2026-02-27 14:56:18] 📥 Pulling: 20221130_114520.mp4...
+[2026-02-27 14:56:25] ✅ Pull success: 20221130_114520.mp4 (271.34 MB)
+[2026-02-27 14:56:25] 📥 Pulling: 20221130_115156.mp4...
+[2026-02-27 14:56:26] ✅ Pull success: 20221130_115156.mp4 (42.15 MB)
+[2026-02-27 14:56:26] 📥 Pulling: 20221130_125413.mp4...
+[2026-02-27 14:56:27] ✅ Pull success: 20221130_125413.mp4 (25.95 MB)
+[2026-02-27 14:56:27] 📥 Pulling: 20230522_000517.mp4...
+[2026-02-27 14:56:28] ✅ Pull success: 20230522_000517.mp4 (34.54 MB)
+[2026-02-27 14:56:28] 📥 Pulling: 20230706_101131.mp4...
+[2026-02-27 14:56:28] ✅ Pull success: 20230706_101131.mp4 (17.52 MB)
+[2026-02-27 14:56:28] 📥 Pulling: 20230806_100221.mp4...
+[2026-02-27 14:56:29] ✅ Pull success: 20230806_100221.mp4 (29.98 MB)
+[2026-02-27 14:56:29] 📥 Pulling: 20240502_203649.mp4...
+[2026-02-27 14:56:30] ✅ Pull success: 20240502_203649.mp4 (14.31 MB)
+[2026-02-27 14:56:30] 📥 Pulling: 20240802_120949.mp4...
+[2026-02-27 14:58:38] 🚀 Starting bulk pull from device...
+[2026-02-27 14:58:39] 📱 Found 39 video(s) on device.
+[2026-02-27 14:58:39] ⏭ Skipping already pulled: 20221118_161752.mp4
+[2026-02-27 14:58:39] ⏭ Skipping already pulled: 20221130_114520.mp4
+[2026-02-27 14:58:39] ⏭ Skipping already pulled: 20221130_115156.mp4
+[2026-02-27 14:58:39] ⏭ Skipping already pulled: 20221130_125413.mp4
+[2026-02-27 14:58:39] ⏭ Skipping already pulled: 20230522_000517.mp4
+[2026-02-27 14:58:39] ⏭ Skipping already pulled: 20230706_101131.mp4
+[2026-02-27 14:58:39] ⏭ Skipping already pulled: 20230806_100221.mp4
+[2026-02-27 14:58:39] ⏭ Skipping already pulled: 20240502_203649.mp4
+[2026-02-27 14:58:39] 📥 Pulling: 20240802_120949.mp4...
+[2026-02-27 15:00:20] ✅ Pull success: 20240802_120949.mp4 (3962.64 MB)
+[2026-02-27 15:00:20] 📥 Pulling: 20241104_154636.mp4...
+[2026-02-27 15:00:30] ✅ Pull success: 20241104_154636.mp4 (323.20 MB)
+[2026-02-27 15:00:30] 📥 Pulling: 20241118_132139.mp4...
+[2026-02-27 15:00:30] ✅ Pull success: 20241118_132139.mp4 (8.01 MB)
+[2026-02-27 15:00:30] 📥 Pulling: 20241129_083500.mp4...
+[2026-02-27 15:00:31] ✅ Pull success: 20241129_083500.mp4 (16.00 MB)
+[2026-02-27 15:00:31] 📥 Pulling: 20241213_191750.mp4...
+[2026-02-27 15:00:35] ✅ Pull success: 20241213_191750.mp4 (134.08 MB)
+[2026-02-27 15:00:35] 📥 Pulling: 20250410_140811.mp4...
+[2026-02-27 15:00:37] ✅ Pull success: 20250410_140811.mp4 (84.92 MB)
+[2026-02-27 15:00:37] 📥 Pulling: 20250520_212010.mp4...
+[2026-02-27 15:00:55] 🚀 Starting bulk pull from device...
+[2026-02-27 15:00:55] 📱 Found 39 video(s) on device.
+[2026-02-27 15:00:55] ⏭ Skipping already pulled: 20221118_161752.mp4
+[2026-02-27 15:00:55] ⏭ Skipping already pulled: 20221130_114520.mp4
+[2026-02-27 15:00:55] ⏭ Skipping already pulled: 20221130_115156.mp4
+[2026-02-27 15:00:56] ⏭ Skipping already pulled: 20221130_125413.mp4
+[2026-02-27 15:00:56] ⏭ Skipping already pulled: 20230522_000517.mp4
+[2026-02-27 15:00:56] ⏭ Skipping already pulled: 20230706_101131.mp4
+[2026-02-27 15:00:56] ⏭ Skipping already pulled: 20230806_100221.mp4
+[2026-02-27 15:00:56] ⏭ Skipping already pulled: 20240502_203649.mp4
+[2026-02-27 15:00:56] ⏭ Skipping already pulled: 20240802_120949.mp4
+[2026-02-27 15:00:56] ⏭ Skipping already pulled: 20241104_154636.mp4
+[2026-02-27 15:00:56] ⏭ Skipping already pulled: 20241118_132139.mp4
+[2026-02-27 15:00:56] ⏭ Skipping already pulled: 20241129_083500.mp4
+[2026-02-27 15:00:56] ⏭ Skipping already pulled: 20241213_191750.mp4
+[2026-02-27 15:00:56] ⏭ Skipping already pulled: 20250410_140811.mp4
+[2026-02-27 15:00:57] 📥 Pulling: 20250520_212010.mp4...
+[2026-02-27 15:01:07] ✅ Pull success: 20250520_212010.mp4 (367.38 MB)
+[2026-02-27 15:01:07] 📥 Pulling: 20250520_223158.mp4...
+[2026-02-27 15:01:17] ✅ Pull success: 20250520_223158.mp4 (308.85 MB)
+[2026-02-27 15:01:17] 📥 Pulling: 20250706_103557.mp4...
+[2026-02-27 15:01:17] ✅ Pull success: 20250706_103557.mp4 (11.84 MB)
+[2026-02-27 15:01:17] 📥 Pulling: 20250820_090439.mp4...
+[2026-02-27 15:01:18] ✅ Pull success: 20250820_090439.mp4 (32.01 MB)
+[2026-02-27 15:01:18] 📥 Pulling: 20250820_090522.mp4...
+[2026-02-27 15:01:18] ✅ Pull success: 20250820_090522.mp4 (7.95 MB)
+[2026-02-27 15:01:18] 📥 Pulling: 20251102_115307.mp4...
+[2026-02-27 15:01:26] ✅ Pull success: 20251102_115307.mp4 (263.40 MB)
+[2026-02-27 15:01:26] 📥 Pulling: 20251102_115536.mp4...
+[2026-02-27 15:01:28] ✅ Pull success: 20251102_115536.mp4 (89.12 MB)
+[2026-02-27 15:01:28] 📥 Pulling: 20251102_120743.mp4...
+[2026-02-27 15:01:36] ✅ Pull success: 20251102_120743.mp4 (294.37 MB)
+[2026-02-27 15:01:36] 📥 Pulling: 20251102_121120.mp4...
+[2026-02-27 15:01:41] ✅ Pull success: 20251102_121120.mp4 (170.16 MB)
+[2026-02-27 15:01:41] 📥 Pulling: 20251102_121739.mp4...
+[2026-02-27 15:01:47] ✅ Pull success: 20251102_121739.mp4 (223.73 MB)
+[2026-02-27 15:01:47] 📥 Pulling: 20251102_122425.mp4...
+[2026-02-27 15:01:51] ✅ Pull success: 20251102_122425.mp4 (123.58 MB)
+[2026-02-27 15:01:51] 📥 Pulling: 20251227_153138.mp4...
+[2026-02-27 15:01:52] ✅ Pull success: 20251227_153138.mp4 (40.30 MB)
+[2026-02-27 15:01:52] 📥 Pulling: 20260124_104102.mp4...
+[2026-02-27 15:02:02] ✅ Pull success: 20260124_104102.mp4 (329.74 MB)
+[2026-02-27 15:02:02] 📥 Pulling: 20260128_153419.mp4...
+[2026-02-27 15:02:06] ✅ Pull success: 20260128_153419.mp4 (132.06 MB)
+[2026-02-27 15:02:06] 📥 Pulling: 20260129_130906.mp4...
+[2026-02-27 15:02:18] ✅ Pull success: 20260129_130906.mp4 (409.75 MB)
+[2026-02-27 15:02:18] 📥 Pulling: 20260129_131309.mp4...
+[2026-02-27 15:02:18] ✅ Pull success: 20260129_131309.mp4 (4.24 MB)
+[2026-02-27 15:02:18] 📥 Pulling: 20260130_165132.mp4...
+[2026-02-27 15:02:29] ✅ Pull success: 20260130_165132.mp4 (378.34 MB)
+[2026-02-27 15:02:29] 📥 Pulling: 20260131_165521.mp4...
+[2026-02-27 15:02:36] ✅ Pull success: 20260131_165521.mp4 (220.45 MB)
+[2026-02-27 15:02:36] 📥 Pulling: 20260204_160201.mp4...
+[2026-02-27 15:02:42] ✅ Pull success: 20260204_160201.mp4 (220.93 MB)
+[2026-02-27 15:02:42] 📥 Pulling: 20260217_130753.mp4...
+[2026-02-27 15:02:45] ✅ Pull success: 20260217_130753.mp4 (105.86 MB)
+[2026-02-27 15:02:45] 📥 Pulling: 20260217_131137.mp4...
+[2026-02-27 15:02:51] ✅ Pull success: 20260217_131137.mp4 (203.01 MB)
+[2026-02-27 15:02:51] 📥 Pulling: 20260218_153223.mp4...
+[2026-02-27 15:02:59] 🚀 Starting bulk pull from device...
+[2026-02-27 15:03:00] 📱 Found 39 video(s) on device.
+[2026-02-27 15:03:00] ⏭ Skipping already pulled: 20221118_161752.mp4
+[2026-02-27 15:03:00] ⏭ Skipping already pulled: 20221130_114520.mp4
+[2026-02-27 15:03:00] ⏭ Skipping already pulled: 20221130_115156.mp4
+[2026-02-27 15:03:00] ⏭ Skipping already pulled: 20221130_125413.mp4
+[2026-02-27 15:03:00] ⏭ Skipping already pulled: 20230522_000517.mp4
+[2026-02-27 15:03:00] ⏭ Skipping already pulled: 20230706_101131.mp4
+[2026-02-27 15:03:00] ⏭ Skipping already pulled: 20230806_100221.mp4
+[2026-02-27 15:03:00] ⏭ Skipping already pulled: 20240502_203649.mp4
+[2026-02-27 15:03:00] ⏭ Skipping already pulled: 20240802_120949.mp4
+[2026-02-27 15:03:01] ⏭ Skipping already pulled: 20241104_154636.mp4
+[2026-02-27 15:03:01] ⏭ Skipping already pulled: 20241118_132139.mp4
+[2026-02-27 15:03:01] ⏭ Skipping already pulled: 20241129_083500.mp4
+[2026-02-27 15:03:01] ⏭ Skipping already pulled: 20241213_191750.mp4
+[2026-02-27 15:03:01] ⏭ Skipping already pulled: 20250410_140811.mp4
+[2026-02-27 15:03:01] ⏭ Skipping already pulled: 20250520_212010.mp4
+[2026-02-27 15:03:01] ⏭ Skipping already pulled: 20250520_223158.mp4
+[2026-02-27 15:03:01] ⏭ Skipping already pulled: 20250706_103557.mp4
+[2026-02-27 15:03:01] ⏭ Skipping already pulled: 20250820_090439.mp4
+[2026-02-27 15:03:01] ⏭ Skipping already pulled: 20250820_090522.mp4
+[2026-02-27 15:03:02] ⏭ Skipping already pulled: 20251102_115307.mp4
+[2026-02-27 15:03:02] ⏭ Skipping already pulled: 20251102_115536.mp4
+[2026-02-27 15:03:02] ⏭ Skipping already pulled: 20251102_120743.mp4
+[2026-02-27 15:03:02] ⏭ Skipping already pulled: 20251102_121120.mp4
+[2026-02-27 15:03:02] ⏭ Skipping already pulled: 20251102_121739.mp4
+[2026-02-27 15:03:02] ⏭ Skipping already pulled: 20251102_122425.mp4
+[2026-02-27 15:03:02] ⏭ Skipping already pulled: 20251227_153138.mp4
+[2026-02-27 15:03:02] ⏭ Skipping already pulled: 20260124_104102.mp4
+[2026-02-27 15:03:02] ⏭ Skipping already pulled: 20260128_153419.mp4
+[2026-02-27 15:03:02] ⏭ Skipping already pulled: 20260129_130906.mp4
+[2026-02-27 15:03:03] ⏭ Skipping already pulled: 20260129_131309.mp4
+[2026-02-27 15:03:03] ⏭ Skipping already pulled: 20260130_165132.mp4
+[2026-02-27 15:03:03] ⏭ Skipping already pulled: 20260131_165521.mp4
+[2026-02-27 15:03:03] ⏭ Skipping already pulled: 20260204_160201.mp4
+[2026-02-27 15:03:03] ⏭ Skipping already pulled: 20260217_130753.mp4
+[2026-02-27 15:03:03] ⏭ Skipping already pulled: 20260217_131137.mp4
+[2026-02-27 15:03:03] 📥 Pulling: 20260218_153223.mp4...
+[2026-02-27 15:03:07] ✅ Pull success: 20260218_153223.mp4 (142.03 MB)
+[2026-02-27 15:03:07] 📥 Pulling: 20260219_163345.mp4...
+[2026-02-27 15:03:12] ✅ Pull success: 20260219_163345.mp4 (181.51 MB)
+[2026-02-27 15:03:12] 📥 Pulling: 20260220_163149.mp4...
+[2026-02-27 15:03:21] ✅ Pull success: 20260220_163149.mp4 (296.83 MB)
+[2026-02-27 15:03:21] 📥 Pulling: 20260225_091548.mp4...
+[2026-02-27 15:03:33] ✅ Pull success: 20260225_091548.mp4 (439.44 MB)
+[2026-02-27 15:03:33] --- Bulk pull finished: 4 new, 35 skipped. ---
+[2026-02-27 15:03:33] 🚀 Starting bulk compression using HandBrakeCLI via main.py...
+[2026-02-27 15:03:33] ▶ Executing: /Users/mac/.pyenv/versions/3.14.2/bin/python main.py /Users/mac/projects/nana_videos/tmp_processing/input /Users/mac/projects/nana_videos/tmp_processing/output --quality 22
+[2026-02-27 15:05:07] 🚀 Starting bulk pull from device...
+[2026-02-27 15:05:08] 📱 Found 39 video(s) on device.
+[2026-02-27 15:05:08] ⏭ Skipping already pulled: 20221118_161752.mp4
+[2026-02-27 15:05:08] ⏭ Skipping already pulled: 20221130_114520.mp4
+[2026-02-27 15:05:08] ⏭ Skipping already pulled: 20221130_115156.mp4
+[2026-02-27 15:05:08] ⏭ Skipping already pulled: 20221130_125413.mp4
+[2026-02-27 15:05:08] ⏭ Skipping already pulled: 20230522_000517.mp4
+[2026-02-27 15:05:08] ⏭ Skipping already pulled: 20230706_101131.mp4
+[2026-02-27 15:05:09] ⏭ Skipping already pulled: 20230806_100221.mp4
+[2026-02-27 15:05:09] ⏭ Skipping already pulled: 20240502_203649.mp4
+[2026-02-27 15:05:09] ⏭ Skipping already pulled: 20240802_120949.mp4
+[2026-02-27 15:05:09] ⏭ Skipping already pulled: 20241104_154636.mp4
+[2026-02-27 15:05:09] ⏭ Skipping already pulled: 20241118_132139.mp4
+[2026-02-27 15:05:09] ⏭ Skipping already pulled: 20241129_083500.mp4
+[2026-02-27 15:05:09] ⏭ Skipping already pulled: 20241213_191750.mp4
+[2026-02-27 15:05:09] ⏭ Skipping already pulled: 20250410_140811.mp4
+[2026-02-27 15:05:09] ⏭ Skipping already pulled: 20250520_212010.mp4
+[2026-02-27 15:05:10] ⏭ Skipping already pulled: 20250520_223158.mp4
+[2026-02-27 15:05:10] ⏭ Skipping already pulled: 20250706_103557.mp4
+[2026-02-27 15:05:10] ⏭ Skipping already pulled: 20250820_090439.mp4
+[2026-02-27 15:05:10] ⏭ Skipping already pulled: 20250820_090522.mp4
+[2026-02-27 15:05:10] ⏭ Skipping already pulled: 20251102_115307.mp4
+[2026-02-27 15:05:10] ⏭ Skipping already pulled: 20251102_115536.mp4
+[2026-02-27 15:05:10] ⏭ Skipping already pulled: 20251102_120743.mp4
+[2026-02-27 15:05:10] ⏭ Skipping already pulled: 20251102_121120.mp4
+[2026-02-27 15:05:10] ⏭ Skipping already pulled: 20251102_121739.mp4
+[2026-02-27 15:05:10] ⏭ Skipping already pulled: 20251102_122425.mp4
+[2026-02-27 15:05:10] ⏭ Skipping already pulled: 20251227_153138.mp4
+[2026-02-27 15:05:11] ⏭ Skipping already pulled: 20260124_104102.mp4
+[2026-02-27 15:05:11] ⏭ Skipping already pulled: 20260128_153419.mp4
+[2026-02-27 15:05:11] ⏭ Skipping already pulled: 20260129_130906.mp4
+[2026-02-27 15:05:11] ⏭ Skipping already pulled: 20260129_131309.mp4
+[2026-02-27 15:05:11] ⏭ Skipping already pulled: 20260130_165132.mp4
+[2026-02-27 15:05:11] ⏭ Skipping already pulled: 20260131_165521.mp4
+[2026-02-27 15:05:11] ⏭ Skipping already pulled: 20260204_160201.mp4
+[2026-02-27 15:05:11] ⏭ Skipping already pulled: 20260217_130753.mp4
+[2026-02-27 15:05:11] ⏭ Skipping already pulled: 20260217_131137.mp4
+[2026-02-27 15:05:12] ⏭ Skipping already pulled: 20260218_153223.mp4
+[2026-02-27 15:05:12] ⏭ Skipping already pulled: 20260219_163345.mp4
+[2026-02-27 15:05:12] ⏭ Skipping already pulled: 20260220_163149.mp4
+[2026-02-27 15:05:12] ⏭ Skipping already pulled: 20260225_091548.mp4
+[2026-02-27 15:05:12] --- Bulk pull finished: 0 new, 39 skipped. ---
+[2026-02-27 15:05:12] 🚀 Starting bulk compression using HandBrakeCLI via main.py...
+[2026-02-27 15:05:12] ▶ Executing: /Users/mac/.pyenv/versions/3.14.2/bin/python main.py /Users/mac/projects/nana_videos/tmp_processing/input /Users/mac/projects/nana_videos/tmp_processing/output --quality 22
+[2026-02-27 15:15:04] 🚀 Starting bulk pull from device...
+[2026-02-27 15:15:05] 📱 Found 39 video(s) on device.
+[2026-02-27 15:15:05] ⏭ Skipping already pulled: 20221118_161752.mp4
+[2026-02-27 15:15:05] ⏭ Skipping already pulled: 20221130_114520.mp4
+[2026-02-27 15:15:05] ⏭ Skipping already pulled: 20221130_115156.mp4
+[2026-02-27 15:15:05] ⏭ Skipping already pulled: 20221130_125413.mp4
+[2026-02-27 15:15:05] ⏭ Skipping already pulled: 20230522_000517.mp4
+[2026-02-27 15:15:05] ⏭ Skipping already pulled: 20230706_101131.mp4
+[2026-02-27 15:15:05] ⏭ Skipping already pulled: 20230806_100221.mp4
+[2026-02-27 15:15:06] ⏭ Skipping already pulled: 20240502_203649.mp4
+[2026-02-27 15:15:06] ⏭ Skipping already pulled: 20240802_120949.mp4
+[2026-02-27 15:15:06] ⏭ Skipping already pulled: 20241104_154636.mp4
+[2026-02-27 15:15:06] ⏭ Skipping already pulled: 20241118_132139.mp4
+[2026-02-27 15:15:06] ⏭ Skipping already pulled: 20241129_083500.mp4
+[2026-02-27 15:15:06] ⏭ Skipping already pulled: 20241213_191750.mp4
+[2026-02-27 15:15:06] ⏭ Skipping already pulled: 20250410_140811.mp4
+[2026-02-27 15:15:06] ⏭ Skipping already pulled: 20250520_212010.mp4
+[2026-02-27 15:15:06] ⏭ Skipping already pulled: 20250520_223158.mp4
+[2026-02-27 15:15:06] ⏭ Skipping already pulled: 20250706_103557.mp4
+[2026-02-27 15:15:06] ⏭ Skipping already pulled: 20250820_090439.mp4
+[2026-02-27 15:15:07] ⏭ Skipping already pulled: 20250820_090522.mp4
+[2026-02-27 15:15:07] ⏭ Skipping already pulled: 20251102_115307.mp4
+[2026-02-27 15:15:07] ⏭ Skipping already pulled: 20251102_115536.mp4
+[2026-02-27 15:15:07] ⏭ Skipping already pulled: 20251102_120743.mp4
+[2026-02-27 15:15:07] ⏭ Skipping already pulled: 20251102_121120.mp4
+[2026-02-27 15:15:07] ⏭ Skipping already pulled: 20251102_121739.mp4
+[2026-02-27 15:15:07] ⏭ Skipping already pulled: 20251102_122425.mp4
+[2026-02-27 15:15:07] ⏭ Skipping already pulled: 20251227_153138.mp4
+[2026-02-27 15:15:07] ⏭ Skipping already pulled: 20260124_104102.mp4
+[2026-02-27 15:15:07] ⏭ Skipping already pulled: 20260128_153419.mp4
+[2026-02-27 15:15:07] ⏭ Skipping already pulled: 20260129_130906.mp4
+[2026-02-27 15:15:08] ⏭ Skipping already pulled: 20260129_131309.mp4
+[2026-02-27 15:15:08] ⏭ Skipping already pulled: 20260130_165132.mp4
+[2026-02-27 15:15:08] ⏭ Skipping already pulled: 20260131_165521.mp4
+[2026-02-27 15:15:08] ⏭ Skipping already pulled: 20260204_160201.mp4
+[2026-02-27 15:15:08] ⏭ Skipping already pulled: 20260217_130753.mp4
+[2026-02-27 15:15:08] ⏭ Skipping already pulled: 20260217_131137.mp4
+[2026-02-27 15:15:08] ⏭ Skipping already pulled: 20260218_153223.mp4
+[2026-02-27 15:15:08] ⏭ Skipping already pulled: 20260219_163345.mp4
+[2026-02-27 15:15:08] ⏭ Skipping already pulled: 20260220_163149.mp4
+[2026-02-27 15:15:08] ⏭ Skipping already pulled: 20260225_091548.mp4
+[2026-02-27 15:15:08] --- Bulk pull finished: 0 new, 39 skipped. ---
+[2026-02-27 15:15:08] 🚀 Starting bulk compression using HandBrakeCLI via main.py...
+[2026-02-27 15:15:08] ▶ Executing: /Users/mac/.pyenv/versions/3.14.2/bin/python main.py /Users/mac/projects/nana_videos/tmp_processing/input /Users/mac/projects/nana_videos/tmp_processing/output --quality 22
+[2026-02-27 15:17:23] 🚀 Starting bulk pull from device...
+[2026-02-27 15:17:24] 📱 Found 39 video(s) on device.
+[2026-02-27 15:17:24] ⏭ Skipping already pulled: 20221118_161752.mp4
+[2026-02-27 15:17:24] ⏭ Skipping already pulled: 20221130_114520.mp4
+[2026-02-27 15:17:24] ⏭ Skipping already pulled: 20221130_115156.mp4
+[2026-02-27 15:17:24] ⏭ Skipping already pulled: 20221130_125413.mp4
+[2026-02-27 15:17:24] ⏭ Skipping already pulled: 20230522_000517.mp4
+[2026-02-27 15:17:24] ⏭ Skipping already pulled: 20230706_101131.mp4
+[2026-02-27 15:17:24] ⏭ Skipping already pulled: 20230806_100221.mp4
+[2026-02-27 15:17:24] ⏭ Skipping already pulled: 20240502_203649.mp4
+[2026-02-27 15:17:24] ⏭ Skipping already pulled: 20240802_120949.mp4
+[2026-02-27 15:17:25] ⏭ Skipping already pulled: 20241104_154636.mp4
+[2026-02-27 15:17:25] ⏭ Skipping already pulled: 20241118_132139.mp4
+[2026-02-27 15:17:25] ⏭ Skipping already pulled: 20241129_083500.mp4
+[2026-02-27 15:17:25] ⏭ Skipping already pulled: 20241213_191750.mp4
+[2026-02-27 15:17:25] ⏭ Skipping already pulled: 20250410_140811.mp4
+[2026-02-27 15:17:25] ⏭ Skipping already pulled: 20250520_212010.mp4
+[2026-02-27 15:17:25] ⏭ Skipping already pulled: 20250520_223158.mp4
+[2026-02-27 15:17:25] ⏭ Skipping already pulled: 20250706_103557.mp4
+[2026-02-27 15:17:25] ⏭ Skipping already pulled: 20250820_090439.mp4
+[2026-02-27 15:17:25] ⏭ Skipping already pulled: 20250820_090522.mp4
+[2026-02-27 15:17:25] ⏭ Skipping already pulled: 20251102_115307.mp4
+[2026-02-27 15:17:26] ⏭ Skipping already pulled: 20251102_115536.mp4
+[2026-02-27 15:17:26] ⏭ Skipping already pulled: 20251102_120743.mp4
+[2026-02-27 15:17:26] ⏭ Skipping already pulled: 20251102_121120.mp4
+[2026-02-27 15:17:26] ⏭ Skipping already pulled: 20251102_121739.mp4
+[2026-02-27 15:17:26] ⏭ Skipping already pulled: 20251102_122425.mp4
+[2026-02-27 15:17:26] ⏭ Skipping already pulled: 20251227_153138.mp4
+[2026-02-27 15:17:26] ⏭ Skipping already pulled: 20260124_104102.mp4
+[2026-02-27 15:17:26] ⏭ Skipping already pulled: 20260128_153419.mp4
+[2026-02-27 15:17:26] ⏭ Skipping already pulled: 20260129_130906.mp4
+[2026-02-27 15:17:26] ⏭ Skipping already pulled: 20260129_131309.mp4
+[2026-02-27 15:17:26] ⏭ Skipping already pulled: 20260130_165132.mp4
+[2026-02-27 15:17:26] ⏭ Skipping already pulled: 20260131_165521.mp4
+[2026-02-27 15:17:27] ⏭ Skipping already pulled: 20260204_160201.mp4
+[2026-02-27 15:17:27] ⏭ Skipping already pulled: 20260217_130753.mp4
+[2026-02-27 15:17:27] ⏭ Skipping already pulled: 20260217_131137.mp4
+[2026-02-27 15:17:27] ⏭ Skipping already pulled: 20260218_153223.mp4
+[2026-02-27 15:17:27] ⏭ Skipping already pulled: 20260219_163345.mp4
+[2026-02-27 15:17:27] ⏭ Skipping already pulled: 20260220_163149.mp4
+[2026-02-27 15:17:27] ⏭ Skipping already pulled: 20260225_091548.mp4
+[2026-02-27 15:17:27] --- Bulk pull finished: 0 new, 39 skipped. ---
+[2026-02-27 15:17:27] 🚀 Starting sequential compression using HandBrakeCLI via main.py...
+[2026-02-27 15:17:27] 🎬 Found 39 local video(s) to compress.
+[2026-02-27 15:17:27] 🎞 Compressing (1/39): 20221118_161752.mp4...
+[2026-02-27 15:17:29] ✅ Success: 20221118_161752.mp4 (0.10 MB)
+[2026-02-27 15:17:29] ⏭ Skipping already compressed: 20260129_131309.mp4
+[2026-02-27 15:17:29] 🎞 Compressing (3/39): 20250820_090522.mp4...
+[2026-02-27 15:17:30] ✅ Success: 20250820_090522.mp4 (0.23 MB)
+[2026-02-27 15:17:30] ⏭ Skipping already compressed: 20241118_132139.mp4
+[2026-02-27 15:17:30] 🎞 Compressing (5/39): 20250706_103557.mp4...
+[2026-02-27 15:17:32] ✅ Success: 20250706_103557.mp4 (0.49 MB)
+[2026-02-27 15:17:32] 🎞 Compressing (6/39): 20240502_203649.mp4...
+[2026-02-27 15:17:34] ✅ Success: 20240502_203649.mp4 (0.27 MB)
+[2026-02-27 15:17:34] ⏭ Skipping already compressed: 20241129_083500.mp4
+[2026-02-27 15:17:34] 🎞 Compressing (8/39): 20230706_101131.mp4...
+[2026-02-27 15:17:35] ✅ Success: 20230706_101131.mp4 (0.36 MB)
+[2026-02-27 15:17:35] ⏭ Skipping already compressed: 20221130_125413.mp4
+[2026-02-27 15:17:35] 🎞 Compressing (10/39): 20230806_100221.mp4...
+[2026-02-27 15:17:38] ✅ Success: 20230806_100221.mp4 (1.71 MB)
+[2026-02-27 15:17:38] ⏭ Skipping already compressed: 20250820_090439.mp4
+[2026-02-27 15:17:38] ⏭ Skipping already compressed: 20230522_000517.mp4
+[2026-02-27 15:17:38] 🎞 Compressing (13/39): 20251227_153138.mp4...
+[2026-02-27 15:17:40] ✅ Success: 20251227_153138.mp4 (1.85 MB)
+[2026-02-27 15:17:40] 🎞 Compressing (14/39): 20221130_115156.mp4...
+[2026-02-27 15:17:44] ✅ Success: 20221130_115156.mp4 (2.45 MB)
+[2026-02-27 15:17:44] ⏭ Skipping already compressed: 20250410_140811.mp4
+[2026-02-27 15:17:44] 🎞 Compressing (16/39): 20251102_115536.mp4...
+[2026-02-27 15:17:48] ✅ Success: 20251102_115536.mp4 (3.31 MB)
+[2026-02-27 15:17:48] 🎞 Compressing (17/39): 20260217_130753.mp4...
+[2026-02-27 15:17:52] ✅ Success: 20260217_130753.mp4 (5.06 MB)
+[2026-02-27 15:17:52] ⏭ Skipping already compressed: 20251102_122425.mp4
+[2026-02-27 15:17:52] ⏭ Skipping already compressed: 20260128_153419.mp4
+[2026-02-27 15:17:52] ⏭ Skipping already compressed: 20241213_191750.mp4
+[2026-02-27 15:17:52] 🎞 Compressing (21/39): 20260218_153223.mp4...
+[2026-02-27 15:17:59] ✅ Success: 20260218_153223.mp4 (5.63 MB)
+[2026-02-27 15:17:59] 🎞 Compressing (22/39): 20251102_121120.mp4...
+[2026-02-27 15:18:05] ✅ Success: 20251102_121120.mp4 (3.91 MB)
+[2026-02-27 15:18:05] ⏭ Skipping already compressed: 20260219_163345.mp4
+[2026-02-27 15:18:05] ⏭ Skipping already compressed: 20260217_131137.mp4
+[2026-02-27 15:18:05] 🎞 Compressing (25/39): 20260131_165521.mp4...
+[2026-02-27 15:18:12] ✅ Success: 20260131_165521.mp4 (8.98 MB)
+[2026-02-27 15:18:12] 🎞 Compressing (26/39): 20260204_160201.mp4...
+[2026-02-27 15:18:21] ✅ Success: 20260204_160201.mp4 (8.00 MB)
+[2026-02-27 15:18:21] ⏭ Skipping already compressed: 20251102_121739.mp4
+[2026-02-27 15:18:21] ⏭ Skipping already compressed: 20251102_115307.mp4
+[2026-02-27 15:18:21] ⏭ Skipping already compressed: 20221130_114520.mp4
+[2026-02-27 15:18:21] ⏭ Skipping already compressed: 20251102_120743.mp4
+[2026-02-27 15:18:21] ⏭ Skipping already compressed: 20260220_163149.mp4
+[2026-02-27 15:18:21] ⏭ Skipping already compressed: 20250520_223158.mp4
+[2026-02-27 15:18:21] ⏭ Skipping already compressed: 20241104_154636.mp4
+[2026-02-27 15:18:21] ⏭ Skipping already compressed: 20260124_104102.mp4
+[2026-02-27 15:18:21] 🎞 Compressing (35/39): 20250520_212010.mp4...
+[2026-02-27 15:18:32] ✅ Success: 20250520_212010.mp4 (10.03 MB)
+[2026-02-27 15:18:32] 🎞 Compressing (36/39): 20260130_165132.mp4...
+[2026-02-27 15:18:49] ✅ Success: 20260130_165132.mp4 (21.31 MB)
+[2026-02-27 15:18:49] 🎞 Compressing (37/39): 20260129_130906.mp4...
+[2026-02-27 15:19:03] ✅ Success: 20260129_130906.mp4 (12.78 MB)
+[2026-02-27 15:19:03] 🎞 Compressing (38/39): 20260225_091548.mp4...
+[2026-02-27 15:19:16] ✅ Success: 20260225_091548.mp4 (14.05 MB)
+[2026-02-27 15:19:16] ⏭ Skipping already compressed: 20240802_120949.mp4
+[2026-02-27 15:19:16] --- Compression finished: 39 success, 0 failed. ---
+[2026-02-27 15:19:16] ========================================
+[2026-02-27 15:19:16] Done! You can now verify the compressed files in 'tmp_processing/output'.
+[2026-02-27 15:19:16] The originals are still on the device. Deployed is deferred as requested.
+[2026-02-27 15:19:16] ========================================
+[2026-02-27 15:31:09] 🚀 Starting bulk pull from device...
+[2026-02-27 15:31:09] ❌ ERROR executing: adb -s RZ8TA0H6K3L shell ls -1 /sdcard/DCIM/Camera/
+[2026-02-27 15:31:09] STDOUT: 
+[2026-02-27 15:31:09] STDERR: adb: device 'RZ8TA0H6K3L' not found
+
+[2026-02-27 15:31:23] 🚀 Starting sequential compression using HandBrakeCLI via main.py...
+[2026-02-27 15:31:23] 🎬 Found 39 local video(s) to compress.
+[2026-02-27 15:31:23] 🎞 Compressing (1/39): 20221118_161752.mp4...
+[2026-02-27 15:31:24] ✅ Success: 20221118_161752.mp4 (0.33 MB)
+[2026-02-27 15:31:24] 🎞 Compressing (2/39): 20260129_131309.mp4...
+[2026-02-27 15:31:26] ✅ Success: 20260129_131309.mp4 (0.35 MB)
+[2026-02-27 15:31:26] 🎞 Compressing (3/39): 20250820_090522.mp4...
+[2026-02-27 15:31:28] ✅ Success: 20250820_090522.mp4 (1.15 MB)
+[2026-02-27 15:31:28] 🎞 Compressing (4/39): 20241118_132139.mp4...
+[2026-02-27 15:31:29] ✅ Success: 20241118_132139.mp4 (0.75 MB)
+[2026-02-27 15:31:29] 🎞 Compressing (5/39): 20250706_103557.mp4...
+[2026-02-27 15:31:31] ✅ Success: 20250706_103557.mp4 (2.79 MB)
+[2026-02-27 15:31:31] 🎞 Compressing (6/39): 20240502_203649.mp4...
+[2026-02-27 15:31:33] ✅ Success: 20240502_203649.mp4 (0.78 MB)
+[2026-02-27 15:31:33] 🎞 Compressing (7/39): 20241129_083500.mp4...
+[2026-02-27 15:31:35] ✅ Success: 20241129_083500.mp4 (1.44 MB)
+[2026-02-27 15:31:35] 🎞 Compressing (8/39): 20230706_101131.mp4...
+[2026-02-27 15:31:37] ✅ Success: 20230706_101131.mp4 (0.95 MB)
+[2026-02-27 15:31:37] 🎞 Compressing (9/39): 20221130_125413.mp4...
+[2026-02-27 15:31:39] ✅ Success: 20221130_125413.mp4 (7.34 MB)
+[2026-02-27 15:31:39] 🎞 Compressing (10/39): 20230806_100221.mp4...
+[2026-02-27 15:31:42] ✅ Success: 20230806_100221.mp4 (12.14 MB)
+[2026-02-27 15:31:42] 🎞 Compressing (11/39): 20250820_090439.mp4...
+[2026-02-27 15:31:45] ✅ Success: 20250820_090439.mp4 (4.48 MB)
+[2026-02-27 15:31:45] 🎞 Compressing (12/39): 20230522_000517.mp4...
+[2026-02-27 15:31:48] ✅ Success: 20230522_000517.mp4 (22.63 MB)
+[2026-02-27 15:31:48] 🎞 Compressing (13/39): 20251227_153138.mp4...
+[2026-02-27 15:31:51] ✅ Success: 20251227_153138.mp4 (9.80 MB)
+[2026-02-27 15:31:51] 🎞 Compressing (14/39): 20221130_115156.mp4...
+[2026-02-27 15:31:54] ✅ Success: 20221130_115156.mp4 (10.37 MB)
+[2026-02-27 15:31:54] 🎞 Compressing (15/39): 20250410_140811.mp4...
+[2026-02-27 15:31:59] ✅ Success: 20250410_140811.mp4 (19.69 MB)
+[2026-02-27 15:31:59] 🎞 Compressing (16/39): 20251102_115536.mp4...
+[2026-02-27 15:32:04] ✅ Success: 20251102_115536.mp4 (11.59 MB)
+[2026-02-27 15:32:04] 🎞 Compressing (17/39): 20260217_130753.mp4...
+[2026-02-27 15:32:10] ✅ Success: 20260217_130753.mp4 (25.47 MB)
+[2026-02-27 15:32:10] 🎞 Compressing (18/39): 20251102_122425.mp4...
+[2026-02-27 15:32:16] ✅ Success: 20251102_122425.mp4 (5.36 MB)
+[2026-02-27 15:32:16] 🎞 Compressing (19/39): 20260128_153419.mp4...
+[2026-02-27 15:32:23] ✅ Success: 20260128_153419.mp4 (26.71 MB)
+[2026-02-27 15:32:23] 🎞 Compressing (20/39): 20241213_191750.mp4...
+[2026-02-27 15:32:29] ✅ Success: 20241213_191750.mp4 (24.96 MB)
+[2026-02-27 15:32:29] 🎞 Compressing (21/39): 20260218_153223.mp4...
+[2026-02-27 15:32:36] ✅ Success: 20260218_153223.mp4 (25.59 MB)
+[2026-02-27 15:32:36] 🎞 Compressing (22/39): 20251102_121120.mp4...
+[2026-02-27 15:32:45] ✅ Success: 20251102_121120.mp4 (9.82 MB)
+[2026-02-27 15:32:45] 🎞 Compressing (23/39): 20260219_163345.mp4...
+[2026-02-27 15:32:53] ✅ Success: 20260219_163345.mp4 (29.03 MB)
+[2026-02-27 15:32:53] 🎞 Compressing (24/39): 20260217_131137.mp4...
+[2026-02-27 15:33:03] ✅ Success: 20260217_131137.mp4 (35.60 MB)
+[2026-02-27 15:33:03] 🎞 Compressing (25/39): 20260131_165521.mp4...
+[2026-02-27 15:33:13] ✅ Success: 20260131_165521.mp4 (51.02 MB)
+[2026-02-27 15:33:13] 🎞 Compressing (26/39): 20260204_160201.mp4...
+[2026-02-27 15:33:47] 🚀 Starting sequential compression using HandBrakeCLI via main.py...
+[2026-02-27 15:33:47] 🎬 Found 39 local video(s) to compress.
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20221118_161752.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20260129_131309.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20250820_090522.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20241118_132139.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20250706_103557.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20240502_203649.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20241129_083500.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20230706_101131.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20221130_125413.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20230806_100221.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20250820_090439.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20230522_000517.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20251227_153138.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20221130_115156.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20250410_140811.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20251102_115536.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20260217_130753.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20251102_122425.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20260128_153419.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20241213_191750.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20260218_153223.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20251102_121120.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20260219_163345.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20260217_131137.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20260131_165521.mp4
+[2026-02-27 15:33:47] ⏭ Skipping already compressed: 20260204_160201.mp4
+[2026-02-27 15:33:47] 🎞 Compressing (27/39): 20251102_121739.mp4...
+[2026-02-27 15:33:58] ✅ Success: 20251102_121739.mp4 (8.54 MB)
+[2026-02-27 15:33:58] 🎞 Compressing (28/39): 20251102_115307.mp4...
+[2026-02-27 15:34:09] ✅ Success: 20251102_115307.mp4 (10.68 MB)
+[2026-02-27 15:34:09] 🎞 Compressing (29/39): 20221130_114520.mp4...
+[2026-02-27 15:34:24] ✅ Success: 20221130_114520.mp4 (63.75 MB)
+[2026-02-27 15:34:24] 🎞 Compressing (30/39): 20251102_120743.mp4...
+[2026-02-27 15:34:40] ✅ Success: 20251102_120743.mp4 (13.86 MB)
+[2026-02-27 15:34:40] 🎞 Compressing (31/39): 20260220_163149.mp4...
+[2026-02-27 15:34:53] ✅ Success: 20260220_163149.mp4 (28.97 MB)
+[2026-02-27 15:34:53] 🎞 Compressing (32/39): 20250520_223158.mp4...
+[2026-02-27 15:35:06] ✅ Success: 20250520_223158.mp4 (15.86 MB)
+[2026-02-27 15:35:06] 🎞 Compressing (33/39): 20241104_154636.mp4...
+[2026-02-27 15:35:20] ✅ Success: 20241104_154636.mp4 (171.22 MB)
+[2026-02-27 15:35:20] 🎞 Compressing (34/39): 20260124_104102.mp4...
+[2026-02-27 15:35:35] ✅ Success: 20260124_104102.mp4 (115.30 MB)
+[2026-02-27 15:35:35] 🎞 Compressing (35/39): 20250520_212010.mp4...
+[2026-02-27 15:36:06] 🚀 Starting sequential compression using HandBrakeCLI via main.py...
+[2026-02-27 15:36:06] 🎬 Found 39 local video(s) to compress.
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20221118_161752.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20260129_131309.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20250820_090522.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20241118_132139.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20250706_103557.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20240502_203649.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20241129_083500.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20230706_101131.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20221130_125413.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20230806_100221.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20250820_090439.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20230522_000517.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20251227_153138.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20221130_115156.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20250410_140811.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20251102_115536.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20260217_130753.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20251102_122425.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20260128_153419.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20241213_191750.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20260218_153223.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20251102_121120.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20260219_163345.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20260217_131137.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20260131_165521.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20260204_160201.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20251102_121739.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20251102_115307.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20221130_114520.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20251102_120743.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20260220_163149.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20250520_223158.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20241104_154636.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20260124_104102.mp4
+[2026-02-27 15:36:06] ⏭ Skipping already compressed: 20250520_212010.mp4
+[2026-02-27 15:36:06] 🎞 Compressing (36/39): 20260130_165132.mp4...
+[2026-02-27 15:36:23] ✅ Success: 20260130_165132.mp4 (81.31 MB)
+[2026-02-27 15:36:23] 🎞 Compressing (37/39): 20260129_130906.mp4...
+[2026-02-27 15:36:41] ✅ Success: 20260129_130906.mp4 (61.15 MB)
+[2026-02-27 15:36:41] 🎞 Compressing (38/39): 20260225_091548.mp4...
+[2026-02-27 15:36:59] ✅ Success: 20260225_091548.mp4 (63.63 MB)
+[2026-02-27 15:36:59] 🎞 Compressing (39/39): 20240802_120949.mp4...
+[2026-02-27 15:48:54] 🚀 Starting bulk push to device...
+[2026-02-27 15:48:54] ❌ ERROR executing: adb -s RZ8TA0H6K3L shell mkdir -p /sdcard/DCIM/Videos/
+[2026-02-27 15:48:54] STDOUT: 
+[2026-02-27 15:48:54] STDERR: adb: device 'RZ8TA0H6K3L' not found
+
+[2026-02-27 15:49:03] 🚀 Starting bulk push to device...
+[2026-02-27 15:49:04] 📦 Found 39 compressed video(s) to push.
+[2026-02-27 15:49:04] 📤 Pushing: 20250820_090522_compressed.mp4...
+[2026-02-27 15:49:04] ✅ Push verified: 20250820_090522_compressed.mp4
+[2026-02-27 15:49:04] 📦 Moving original: 20250820_090522.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:49:05] 📤 Pushing: 20251102_121739_compressed.mp4...
+[2026-02-27 15:49:06] ✅ Push verified: 20251102_121739_compressed.mp4
+[2026-02-27 15:49:06] 📦 Moving original: 20251102_121739.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:49:06] 📤 Pushing: 20240802_120949_compressed.mp4...
+[2026-02-27 15:50:45] ✅ Push verified: 20240802_120949_compressed.mp4
+[2026-02-27 15:50:45] 📦 Moving original: 20240802_120949.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:50:45] 📤 Pushing: 20250410_140811_compressed.mp4...
+[2026-02-27 15:50:47] ✅ Push verified: 20250410_140811_compressed.mp4
+[2026-02-27 15:50:47] 📦 Moving original: 20250410_140811.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:50:47] 📤 Pushing: 20260129_130906_compressed.mp4...
+[2026-02-27 15:50:52] ✅ Push verified: 20260129_130906_compressed.mp4
+[2026-02-27 15:50:52] 📦 Moving original: 20260129_130906.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:50:52] 📤 Pushing: 20260131_165521_compressed.mp4...
+[2026-02-27 15:50:55] ✅ Push verified: 20260131_165521_compressed.mp4
+[2026-02-27 15:50:56] 📦 Moving original: 20260131_165521.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:50:56] 📤 Pushing: 20260129_131309_compressed.mp4...
+[2026-02-27 15:50:56] ✅ Push verified: 20260129_131309_compressed.mp4
+[2026-02-27 15:50:56] 📦 Moving original: 20260129_131309.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:50:56] 📤 Pushing: 20230522_000517_compressed.mp4...
+[2026-02-27 15:50:58] ✅ Push verified: 20230522_000517_compressed.mp4
+[2026-02-27 15:50:58] 📦 Moving original: 20230522_000517.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:50:58] 📤 Pushing: 20240502_203649_compressed.mp4...
+[2026-02-27 15:50:58] ✅ Push verified: 20240502_203649_compressed.mp4
+[2026-02-27 15:50:58] 📦 Moving original: 20240502_203649.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:50:58] 📤 Pushing: 20241104_154636_compressed.mp4...
+[2026-02-27 15:51:07] 🚀 Starting bulk push to device...
+[2026-02-27 15:51:08] 📦 Found 39 compressed video(s) to push.
+[2026-02-27 15:51:08] 📤 Pushing: 20250820_090522_compressed.mp4...
+[2026-02-27 15:51:08] ⏭ Already pushed: 20250820_090522_compressed.mp4
+[2026-02-27 15:51:08] ✅ Push verified: 20250820_090522_compressed.mp4
+[2026-02-27 15:51:08] ⏭ Original already moved: 20250820_090522.mp4
+[2026-02-27 15:51:08] 📤 Pushing: 20251102_121739_compressed.mp4...
+[2026-02-27 15:51:08] ⏭ Already pushed: 20251102_121739_compressed.mp4
+[2026-02-27 15:51:08] ✅ Push verified: 20251102_121739_compressed.mp4
+[2026-02-27 15:51:08] ⏭ Original already moved: 20251102_121739.mp4
+[2026-02-27 15:51:08] 📤 Pushing: 20240802_120949_compressed.mp4...
+[2026-02-27 15:51:08] ⏭ Already pushed: 20240802_120949_compressed.mp4
+[2026-02-27 15:51:08] ✅ Push verified: 20240802_120949_compressed.mp4
+[2026-02-27 15:51:09] ⏭ Original already moved: 20240802_120949.mp4
+[2026-02-27 15:51:09] 📤 Pushing: 20250410_140811_compressed.mp4...
+[2026-02-27 15:51:09] ⏭ Already pushed: 20250410_140811_compressed.mp4
+[2026-02-27 15:51:09] ✅ Push verified: 20250410_140811_compressed.mp4
+[2026-02-27 15:51:09] ⏭ Original already moved: 20250410_140811.mp4
+[2026-02-27 15:51:09] 📤 Pushing: 20260129_130906_compressed.mp4...
+[2026-02-27 15:51:09] ⏭ Already pushed: 20260129_130906_compressed.mp4
+[2026-02-27 15:51:09] ✅ Push verified: 20260129_130906_compressed.mp4
+[2026-02-27 15:51:09] ⏭ Original already moved: 20260129_130906.mp4
+[2026-02-27 15:51:09] 📤 Pushing: 20260131_165521_compressed.mp4...
+[2026-02-27 15:51:09] ⏭ Already pushed: 20260131_165521_compressed.mp4
+[2026-02-27 15:51:09] ✅ Push verified: 20260131_165521_compressed.mp4
+[2026-02-27 15:51:10] ⏭ Original already moved: 20260131_165521.mp4
+[2026-02-27 15:51:10] 📤 Pushing: 20260129_131309_compressed.mp4...
+[2026-02-27 15:51:10] ⏭ Already pushed: 20260129_131309_compressed.mp4
+[2026-02-27 15:51:10] ✅ Push verified: 20260129_131309_compressed.mp4
+[2026-02-27 15:51:10] ⏭ Original already moved: 20260129_131309.mp4
+[2026-02-27 15:51:10] 📤 Pushing: 20230522_000517_compressed.mp4...
+[2026-02-27 15:51:10] ⏭ Already pushed: 20230522_000517_compressed.mp4
+[2026-02-27 15:51:10] ✅ Push verified: 20230522_000517_compressed.mp4
+[2026-02-27 15:51:10] ⏭ Original already moved: 20230522_000517.mp4
+[2026-02-27 15:51:10] 📤 Pushing: 20240502_203649_compressed.mp4...
+[2026-02-27 15:51:10] ⏭ Already pushed: 20240502_203649_compressed.mp4
+[2026-02-27 15:51:10] ✅ Push verified: 20240502_203649_compressed.mp4
+[2026-02-27 15:51:11] ⏭ Original already moved: 20240502_203649.mp4
+[2026-02-27 15:51:11] 📤 Pushing: 20241104_154636_compressed.mp4...
+[2026-02-27 15:51:24] ✅ Push verified: 20241104_154636_compressed.mp4
+[2026-02-27 15:51:24] 📦 Moving original: 20241104_154636.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:24] 📤 Pushing: 20260218_153223_compressed.mp4...
+[2026-02-27 15:51:26] ✅ Push verified: 20260218_153223_compressed.mp4
+[2026-02-27 15:51:26] 📦 Moving original: 20260218_153223.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:26] 📤 Pushing: 20260124_104102_compressed.mp4...
+[2026-02-27 15:51:35] ✅ Push verified: 20260124_104102_compressed.mp4
+[2026-02-27 15:51:35] 📦 Moving original: 20260124_104102.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:35] 📤 Pushing: 20250820_090439_compressed.mp4...
+[2026-02-27 15:51:36] ✅ Push verified: 20250820_090439_compressed.mp4
+[2026-02-27 15:51:36] 📦 Moving original: 20250820_090439.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:36] 📤 Pushing: 20251102_120743_compressed.mp4...
+[2026-02-27 15:51:38] ✅ Push verified: 20251102_120743_compressed.mp4
+[2026-02-27 15:51:38] 📦 Moving original: 20251102_120743.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:38] 📤 Pushing: 20260128_153419_compressed.mp4...
+[2026-02-27 15:51:41] ✅ Push verified: 20260128_153419_compressed.mp4
+[2026-02-27 15:51:41] 📦 Moving original: 20260128_153419.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:41] 📤 Pushing: 20230706_101131_compressed.mp4...
+[2026-02-27 15:51:41] ✅ Push verified: 20230706_101131_compressed.mp4
+[2026-02-27 15:51:41] 📦 Moving original: 20230706_101131.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:41] 📤 Pushing: 20241213_191750_compressed.mp4...
+[2026-02-27 15:51:44] ✅ Push verified: 20241213_191750_compressed.mp4
+[2026-02-27 15:51:44] 📦 Moving original: 20241213_191750.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:44] 📤 Pushing: 20250520_212010_compressed.mp4...
+[2026-02-27 15:51:46] ✅ Push verified: 20250520_212010_compressed.mp4
+[2026-02-27 15:51:46] 📦 Moving original: 20250520_212010.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:46] 📤 Pushing: 20260217_131137_compressed.mp4...
+[2026-02-27 15:51:49] ✅ Push verified: 20260217_131137_compressed.mp4
+[2026-02-27 15:51:49] 📦 Moving original: 20260217_131137.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:49] 📤 Pushing: 20221130_125413_compressed.mp4...
+[2026-02-27 15:51:50] ✅ Push verified: 20221130_125413_compressed.mp4
+[2026-02-27 15:51:50] 📦 Moving original: 20221130_125413.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:50] 📤 Pushing: 20260204_160201_compressed.mp4...
+[2026-02-27 15:51:52] ✅ Push verified: 20260204_160201_compressed.mp4
+[2026-02-27 15:51:52] 📦 Moving original: 20260204_160201.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:52] 📤 Pushing: 20251102_115536_compressed.mp4...
+[2026-02-27 15:51:54] ✅ Push verified: 20251102_115536_compressed.mp4
+[2026-02-27 15:51:54] 📦 Moving original: 20251102_115536.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:54] 📤 Pushing: 20251102_122425_compressed.mp4...
+[2026-02-27 15:51:54] ✅ Push verified: 20251102_122425_compressed.mp4
+[2026-02-27 15:51:55] 📦 Moving original: 20251102_122425.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:55] 📤 Pushing: 20241118_132139_compressed.mp4...
+[2026-02-27 15:51:55] ✅ Push verified: 20241118_132139_compressed.mp4
+[2026-02-27 15:51:55] 📦 Moving original: 20241118_132139.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:55] 📤 Pushing: 20250706_103557_compressed.mp4...
+[2026-02-27 15:51:56] ✅ Push verified: 20250706_103557_compressed.mp4
+[2026-02-27 15:51:56] 📦 Moving original: 20250706_103557.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:56] 📤 Pushing: 20251227_153138_compressed.mp4...
+[2026-02-27 15:51:57] ✅ Push verified: 20251227_153138_compressed.mp4
+[2026-02-27 15:51:57] 📦 Moving original: 20251227_153138.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:57] 📤 Pushing: 20250520_223158_compressed.mp4...
+[2026-02-27 15:51:58] ✅ Push verified: 20250520_223158_compressed.mp4
+[2026-02-27 15:51:58] 📦 Moving original: 20250520_223158.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:51:58] 📤 Pushing: 20260130_165132_compressed.mp4...
+[2026-02-27 15:52:06] ✅ Push verified: 20260130_165132_compressed.mp4
+[2026-02-27 15:52:06] 📦 Moving original: 20260130_165132.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:52:06] 📤 Pushing: 20260220_163149_compressed.mp4...
+[2026-02-27 15:52:08] ✅ Push verified: 20260220_163149_compressed.mp4
+[2026-02-27 15:52:08] 📦 Moving original: 20260220_163149.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:52:08] 📤 Pushing: 20251102_115307_compressed.mp4...
+[2026-02-27 15:52:09] ✅ Push verified: 20251102_115307_compressed.mp4
+[2026-02-27 15:52:10] 📦 Moving original: 20251102_115307.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:52:10] 📤 Pushing: 20221130_115156_compressed.mp4...
+[2026-02-27 15:52:11] ✅ Push verified: 20221130_115156_compressed.mp4
+[2026-02-27 15:52:11] 📦 Moving original: 20221130_115156.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:52:11] 📤 Pushing: 20241129_083500_compressed.mp4...
+[2026-02-27 15:52:11] ✅ Push verified: 20241129_083500_compressed.mp4
+[2026-02-27 15:52:11] 📦 Moving original: 20241129_083500.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:52:12] 📤 Pushing: 20221130_114520_compressed.mp4...
+[2026-02-27 15:52:17] ✅ Push verified: 20221130_114520_compressed.mp4
+[2026-02-27 15:52:17] 📦 Moving original: 20221130_114520.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:52:17] 📤 Pushing: 20221118_161752_compressed.mp4...
+[2026-02-27 15:52:17] ✅ Push verified: 20221118_161752_compressed.mp4
+[2026-02-27 15:52:17] 📦 Moving original: 20221118_161752.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:52:17] 📤 Pushing: 20260219_163345_compressed.mp4...
+[2026-02-27 15:52:20] ✅ Push verified: 20260219_163345_compressed.mp4
+[2026-02-27 15:52:20] 📦 Moving original: 20260219_163345.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:52:20] 📤 Pushing: 20260225_091548_compressed.mp4...
+[2026-02-27 15:52:26] ✅ Push verified: 20260225_091548_compressed.mp4
+[2026-02-27 15:52:26] 📦 Moving original: 20260225_091548.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:52:26] 📤 Pushing: 20230806_100221_compressed.mp4...
+[2026-02-27 15:52:27] ✅ Push verified: 20230806_100221_compressed.mp4
+[2026-02-27 15:52:27] 📦 Moving original: 20230806_100221.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:52:27] 📤 Pushing: 20260217_130753_compressed.mp4...
+[2026-02-27 15:52:30] ✅ Push verified: 20260217_130753_compressed.mp4
+[2026-02-27 15:52:30] 📦 Moving original: 20260217_130753.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:52:30] 📤 Pushing: 20251102_121120_compressed.mp4...
+[2026-02-27 15:52:31] ✅ Push verified: 20251102_121120_compressed.mp4
+[2026-02-27 15:52:31] 📦 Moving original: 20251102_121120.mp4 -> /sdcard/DCIM/Originals/
+[2026-02-27 15:52:31] --- Sync finished: 39 pushed, 30 originals archived. ---
+[2026-02-27 15:52:31] ========================================
+[2026-02-27 15:52:31] Done! Compressed videos are in '/sdcard/DCIM/Videos/'.
+[2026-02-27 15:52:31] Originals have been moved to '/sdcard/DCIM/Originals/'.
+[2026-02-27 15:52:31] ========================================

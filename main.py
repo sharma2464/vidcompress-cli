@@ -9,8 +9,8 @@ from concurrent.futures import ThreadPoolExecutor
 
 # ================= CONFIG =================
 VIDEO_EXTS = {".mp4", ".mov", ".mkv", ".m4v", ".avi", ".webm", ".3gp"}
-DEFAULT_QUALITY = 28          # HandBrake RF-like
-MAX_WORKERS = 2               # GPU-safe
+DEFAULT_QUALITY = 28  # HandBrake RF-like
+MAX_WORKERS = 2  # GPU-safe
 OUTPUT_SUFFIX = "_compressed.mp4"
 # ==========================================
 
@@ -22,6 +22,7 @@ def log(msg):
 
 def which(cmd):
     from shutil import which as _which
+
     return _which(cmd) is not None
 
 
@@ -30,10 +31,7 @@ def is_video(path: Path):
 
 
 def already_processed(path: Path, output_root: Path):
-    return (
-        output_root in path.parents
-        or path.name.endswith(OUTPUT_SUFFIX)
-    )
+    return output_root in path.parents or path.name.endswith(OUTPUT_SUFFIX)
 
 
 def run(cmd):
@@ -81,57 +79,67 @@ def ffmpeg_remux(input_path: Path, output_path: Path):
     cmd = [
         "ffmpeg",
         "-y",
-        "-i", str(input_path),
-        "-map", "0:v:0",
-        "-map", "0:a?",
-        "-map_metadata", "0",
-        "-c", "copy",
-        "-movflags", "+faststart",
-        str(output_path)
+        "-i",
+        str(input_path),
+        "-map",
+        "0:v:0",
+        "-map",
+        "0:a?",
+        "-map_metadata",
+        "0",
+        "-c",
+        "copy",
+        "-movflags",
+        "+faststart",
+        str(output_path),
     ]
     return run(cmd)
 
 
-def ffmpeg_encode(input_path: Path, output_path: Path, quality: int, platform_name: str):
+def ffmpeg_encode(
+    input_path: Path, output_path: Path, quality: int, platform_name: str
+):
     cmd = ["ffmpeg", "-y", "-i", str(input_path)]
 
     if platform_name == "macos":
         # Apple VideoToolbox (CQ mode)
         cmd += [
-            "-c:v", "hevc_videotoolbox",
-            "-tag:v", "hvc1",
-            "-q:v", str(quality),
-            "-g", "48"
+            "-c:v",
+            "hevc_videotoolbox",
+            "-tag:v",
+            "hvc1",
+            "-q:v",
+            str(quality),
+            "-g",
+            "48",
         ]
     else:
         # Software fallback (CRF)
-        cmd += [
-            "-c:v", "libx265",
-            "-crf", str(quality),
-            "-preset", "medium"
-        ]
+        cmd += ["-c:v", "libx265", "-crf", str(quality), "-preset", "medium"]
 
-    cmd += [
-        "-c:a", "aac",
-        "-b:a", "128k",
-        "-movflags", "+faststart",
-        str(output_path)
-    ]
+    cmd += ["-c:a", "aac", "-b:a", "128k", "-movflags", "+faststart", str(output_path)]
 
     return run(cmd)
 
 
 def handbrake_encode(input_path: Path, output_path: Path, quality: int):
+    # Use 2160p preset to avoid downscaling source resolution (up to 4K)
+    # VideoToolbox quality is 0-100 (higher is better).
+    # RF 22 in software x265 is roughly -q 40-45 in VideoToolbox.
     cmd = [
         "HandBrakeCLI",
-        "-i", str(input_path),
-        "-o", str(output_path),
-        "--preset", "H.265 Apple VideoToolbox 1080p",
-        "-q", str(quality),
+        "-i",
+        str(input_path),
+        "-o",
+        str(output_path),
+        "--preset",
+        "H.265 Apple VideoToolbox 2160p 4K",
+        "-q",
+        str(quality),
         "--all-audio",
         "--all-subtitles",
         "--markers",
-        "--optimize"
+        "--optimize",
     ]
     return run(cmd)
 
@@ -182,7 +190,11 @@ def process_one(
     else:
         res = ffmpeg_encode(input_path, output_path, quality, platform_name)
 
-    if res.returncode != 0 or not output_path.exists() or output_path.stat().st_size == 0:
+    if (
+        res.returncode != 0
+        or not output_path.exists()
+        or output_path.stat().st_size == 0
+    ):
         log(f"❌ Failed: {input_path}")
         if output_path.exists():
             output_path.unlink()
@@ -199,36 +211,45 @@ def main():
     parser.add_argument("--engine", choices=["ffmpeg", "handbrake"])
     parser.add_argument("--remux", action="store_true")
     # Debug option to print environment and tooling status
-    parser.add_argument('--debug', action='store_true', help='Print debug information and exit')
+    parser.add_argument(
+        "--debug", action="store_true", help="Print debug information and exit"
+    )
     args = parser.parse_args()
-    if getattr(args, 'debug', False):
+    if getattr(args, "debug", False):
         # Print a concise diagnostic report and exit
         def _print_debug():
             import platform as _plat
             import sys as _sys
             import subprocess as _sp
+
             print("--- VidCompress Debug Info ---")
             print(f"OS: {_plat.system()} {_plat.machine()}")
             print(f"Python: {_sys.version.split()[0]}")
             # ffmpeg
             try:
-                _out = _sp.run(["ffmpeg", "-version"], capture_output=True, text=True, check=False).stdout
-                print("FFmpeg:", _out.splitlines()[0] if _out else 'not found')
+                _out = _sp.run(
+                    ["ffmpeg", "-version"], capture_output=True, text=True, check=False
+                ).stdout
+                print("FFmpeg:", _out.splitlines()[0] if _out else "not found")
             except Exception:
                 print("FFmpeg: not found")
             # HandBrakeCLI
             try:
-                _out = _sp.run(["HandBrakeCLI", "-V"], capture_output=True, text=True, check=False).stdout
-                print("HandBrakeCLI:", _out.splitlines()[0] if _out else 'not found')
+                _out = _sp.run(
+                    ["HandBrakeCLI", "-V"], capture_output=True, text=True, check=False
+                ).stdout
+                print("HandBrakeCLI:", _out.splitlines()[0] if _out else "not found")
             except Exception:
                 print("HandBrakeCLI: not found")
             # PySide6
             try:
                 import PySide6  # noqa: F401
+
                 print("PySide6: available")
             except Exception:
                 print("PySide6: not available")
             print("--- end debug info ---")
+
         _print_debug()
         sys.exit(0)
 
