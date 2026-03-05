@@ -1,0 +1,33 @@
+{
+  "timestamp": "2026-01-24T09:18:01.790441+00:00",
+  "session_id": "session_20260124_091801_caae90b3",
+  "user_prompt": "I want to test the prompt capture system by adding a comment to main.py",
+  "files_modified": [
+    "main.py"
+  ],
+  "diffs": {
+    "main.py": {
+      "type": "edit",
+      "diff_content": "diff --git a/main.py b/main.py\nindex 86179fc..513698b 100644\n--- a/main.py\n+++ b/main.py\n@@ -12,6 +12,7 @@ VIDEO_EXTS = {\".mp4\", \".mov\", \".mkv\", \".m4v\", \".avi\", \".webm\", \".3gp\"}\n DEFAULT_QUALITY = 28          # HandBrake RF-like\n MAX_WORKERS = 2               # GPU-safe\n OUTPUT_SUFFIX = \"_compressed.mp4\"\n+# Test comment for prompt capture system\n # =========================================="
+    }
+  },
+  "agent_response": "Added a test comment to main.py to demonstrate the prompt capture system functionality",
+  "context": {
+    "platform": {
+      "platform": "Windows-10-10.0.26100-SP0",
+      "system": "Windows",
+      "python_version": "3.10.5",
+      "working_directory": "C:\\Users\\Sharma\\projects\\vidcompress-cli",
+      "timestamp": "2026-01-24T09:18:01.912930+00:00"
+    },
+    "git": {
+      "branch": "dev2",
+      "is_clean": false,
+      "has_git": true
+    },
+    "component": "main",
+    "description": "test-prompt-system"
+  },
+  "status": "completed",
+  "completed_timestamp": "2026-01-24T09:19:58.015739+00:00"
+}

@@ -1,0 +1,53 @@
+name: Install Dependencies
+
+on: [push, pull_request]
+
+jobs:
+  install-deps:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    
+    runs-on: ${{ matrix.os }}
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Install system dependencies
+      shell: bash
+      run: |
+        case "${{ matrix.os }}" in
+          ubuntu-latest)
+            sudo apt-get update
+            sudo apt-get install -y \
+              ffmpeg \
+              libavcodec-dev \
+              libavformat-dev \
+              libavutil-dev \
+              libswscale-dev \
+              libavdevice-dev \
+              libavfilter-dev \
+              python3-pip \
+              python3-dev \
+              build-essential
+            ;;
+          macos-latest)
+            brew update
+            brew install ffmpeg handbrake python3
+            ;;
+          windows-latest)
+            choco install ffmpeg handbrake-cli python
+            ;;
+        esac
+        
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install PySide6 PySide6-Addons Pillow
+        
+    - name: Verify installation
+      run: |
+        python -c "import PySide6; print('✅ PySide6 installed successfully')"
+        ffmpeg -version || echo "❌ FFmpeg not available"
+        HandBrakeCLI --version || echo "ℹ️ HandBrakeCLI not available"
